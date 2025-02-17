@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Contact Manager</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-blue-600 to-green-500 text-white py-24">
+    <div class="container mx-auto text-center">
+      <h1 class="text-6xl font-extrabold mb-4">Welcome to Smart Contact Manager</h1>
+      <p class="text-lg mb-6">Simplify, organize, and connect. We help you manage your contacts like never before.</p>
+      <a href="#overview" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold shadow-md hover:bg-gray-100 transition duration-300">
+        Discover More
+      </a>
+    </div>
+  </header>
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-16 bg-gray-50">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Contact Manager?</h2>
+        <p class="text-gray-700 mb-4">
+          In today's fast-paced world, staying connected and organized is essential. Contact Manager provides the tools to manage personal and professional relationships effortlessly.
+        </p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li><i class="fas fa-address-book text-blue-500"></i> Seamless organization of all your contacts</li>
+          <li><i class="fas fa-desktop text-green-500"></i> Powerful, easy-to-use interface</li>
+          <li><i class="fas fa-shield-alt text-purple-500"></i> Robust security features to protect your data</li>
+          <li><i class="fas fa-headset text-red-500"></i> 24/7 customer support</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-users text-blue-500 text-8xl animate__animated animate__bounce"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section id="values" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-8">Our Core Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+          <i class="fas fa-lightbulb text-blue-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+          <p class="text-gray-700">We embrace change and strive to build cutting-edge solutions that simplify your life.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+          <i class="fas fa-shield-alt text-green-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Security</h3>
+          <p class="text-gray-700">Your privacy and data security are our top priorities.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+          <i class="fas fa-users text-purple-500 text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Community</h3>
+          <p class="text-gray-700">We are committed to fostering meaningful connections and collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <!-- <section id="team" class="py-16 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Meet Our Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <i class="fas fa-user-tie text-blue-500 text-6xl mb-4"></i>
+          <h3 class="text-2xl font-bold">Alice Johnson</h3>
+          <p class="text-gray-600">CEO & Founder</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <i class="fas fa-user-cog text-green-500 text-6xl mb-4"></i>
+          <h3 class="text-2xl font-bold">Michael Lee</h3>
+          <p class="text-gray-600">CTO</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <i class="fas fa-user-chart text-purple-500 text-6xl mb-4"></i>
+          <h3 class="text-2xl font-bold">Sophia Brown</h3>
+          <p class="text-gray-600">Marketing Lead</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <i class="fas fa-headset text-red-500 text-6xl mb-4"></i>
+          <h3 class="text-2xl font-bold">James Wilson</h3>
+          <p class="text-gray-600">Customer Success Manager</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Call to Action Section -->
+  <section class="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Transform the Way You Manage Contacts?</h2>
+      <p class="text-lg mb-8">Sign up today and join thousands of users who trust Contact Manager for their organizational needs.</p>
+      <a th:href="@{/register}" class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+        Get Started Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Contact Manager. All rights reserved.</p>
+      <p>Follow us on 
+        <a href="#" class="text-blue-400">Facebook</a>, 
+        <a href="#" class="text-blue-400">Twitter</a>, and 
+        <a href="#" class="text-blue-400">Instagram</a>.
+      </p>
+    </div>
+  </footer>
+</div>
+<script>
+  console.log("About page loaded");
+</script>
+</body>
+</html>
+

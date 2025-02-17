@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Manager Services</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-green-500 to-blue-600 text-white py-10">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Our Services</h1>
+      <p class="text-xl">Discover how Contact Manager can make your life easier and more organized.</p>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Why Choose Us?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+          <i class="fas fa-user-friends text-green-500 text-5xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Personalized Experience</h3>
+          <p class="text-gray-600">Tailor your contact management system to match your unique needs and preferences.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+          <i class="fas fa-shield-alt text-blue-500 text-5xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Top Security</h3>
+          <p class="text-gray-600">Keep your data safe with industry-leading encryption and privacy features.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+          <i class="fas fa-mobile-alt text-purple-500 text-5xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Mobile Friendly</h3>
+          <p class="text-gray-600">Access your contacts anytime, anywhere, from any device with ease.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+          <i class="fas fa-sync-alt text-yellow-500 text-5xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Automatic Sync</h3>
+          <p class="text-gray-600">Seamlessly sync your data across multiple platforms in real-time.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+          <i class="fas fa-chart-line text-red-500 text-5xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Analytics</h3>
+          <p class="text-gray-600">Get valuable insights into your contacts and usage patterns to stay ahead.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+          <i class="fas fa-headset text-indigo-500 text-5xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">24/7 Support</h3>
+          <p class="text-gray-600">Our dedicated support team is always here to help you whenever you need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Start Managing Your Contacts the Smart Way</h2>
+      <p class="text-lg mb-8">Join thousands of users and simplify your contact management today.</p>
+      <a th:href="@{/register}" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+        Sign Up Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Contact Manager. All rights reserved.</p>
+      <p>Follow us on <a href="#" class="text-blue-400">Facebook</a>, <a href="#" class="text-blue-400">Twitter</a>, and <a href="#" class="text-blue-400">Instagram</a>.</p>
+    </div>
+  </footer>
+</div>
+<script>
+  console.log("Services page for Contact Manager");
+</script>
+</body>
+</html>
