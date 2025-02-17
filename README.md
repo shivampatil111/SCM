@@ -28,11 +28,13 @@ Interactive UI with JavaScript
 
 Spring Data JPA & MySQL for data storage
 Secure password hashing with BCrypt
+
 🛠️ Tech Stack
 Backend: Java, Spring Boot, Spring MVC, Spring Security, Spring Data JPA
 Frontend: HTML, CSS, JavaScript, Thymeleaf, Tailwind CSS, Flowbite
 Database: MySQL
 Authentication: OAuth (Google, GitHub), Spring Security
+
 📂 Project Setup
 Prerequisites:
 Java 17+
